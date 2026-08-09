@@ -9,13 +9,14 @@ describe("eslint-plugin-1997", function () {
     expect(plugin.meta.version).toBe("1.0.0");
   });
 
-  test("exports all five rules", function () {
+  test("exports all six rules", function () {
     expect(plugin.rules).toBeDefined();
     expect(plugin.rules["no-es2-features"]).toBeDefined();
     expect(plugin.rules["no-modern-globals"]).toBeDefined();
     expect(plugin.rules["no-modern-array-methods"]).toBeDefined();
     expect(plugin.rules["no-modern-string-methods"]).toBeDefined();
     expect(plugin.rules["no-modern-object-methods"]).toBeDefined();
+    expect(plugin.rules["no-post-dom1-methods"]).toBeDefined();
   });
 
   test("exports a recommended config", function () {
@@ -27,6 +28,7 @@ describe("eslint-plugin-1997", function () {
     expect(plugin.configs.recommended.rules["1997/no-modern-array-methods"]).toBe("error");
     expect(plugin.configs.recommended.rules["1997/no-modern-string-methods"]).toBe("error");
     expect(plugin.configs.recommended.rules["1997/no-modern-object-methods"]).toBe("error");
+    expect(plugin.configs.recommended.rules["1997/no-post-dom1-methods"]).toBe("error");
   });
 
   test("recommended config references the plugin", function () {

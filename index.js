@@ -5,6 +5,7 @@ const noModernGlobals = require("./lib/rules/no-modern-globals");
 const noModernArrayMethods = require("./lib/rules/no-modern-array-methods");
 const noModernStringMethods = require("./lib/rules/no-modern-string-methods");
 const noModernObjectMethods = require("./lib/rules/no-modern-object-methods");
+const noPostDom1Methods = require("./lib/rules/no-post-dom1-methods");
 
 const plugin = {
   meta: {
@@ -18,6 +19,7 @@ const plugin = {
     "no-modern-array-methods": noModernArrayMethods,
     "no-modern-string-methods": noModernStringMethods,
     "no-modern-object-methods": noModernObjectMethods,
+    "no-post-dom1-methods": noPostDom1Methods,
   },
 
   configs: {},
@@ -33,6 +35,7 @@ plugin.configs.recommended = {
     "1997/no-modern-array-methods": "error",
     "1997/no-modern-string-methods": "error",
     "1997/no-modern-object-methods": "error",
+    "1997/no-post-dom1-methods": "error",
   },
 };
 
