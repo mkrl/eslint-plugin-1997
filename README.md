@@ -49,14 +49,21 @@ module.exports = [
 
 ## Rules
 
-| Rule | Description |
-|------|-------------|
-| `1997/no-es2-features` | Disallows syntax features introduced after ES1 (arrow functions, classes, let/const, template literals, destructuring, spread, default params, generators, async/await, for-of, optional chaining, nullish coalescing, etc.) |
-| `1997/no-modern-globals` | Disallows modern global objects not in ES1 (`Promise`, `Map`, `Set`, `Symbol`, `Proxy`, `Reflect`, `JSON`, `BigInt`, `globalThis`, TypedArrays, etc.) |
-| `1997/no-modern-array-methods` | Disallows Array methods added after ES1 (`forEach`, `map`, `filter`, `reduce`, `find`, `includes`, `flat`, `Array.from`, `Array.isArray`, etc.) |
-| `1997/no-modern-string-methods` | Disallows String methods added after ES1 (`trim`, `startsWith`, `endsWith`, `includes`, `repeat`, `padStart`, `padEnd`, `replaceAll`, `matchAll`, etc.) |
-| `1997/no-modern-object-methods` | Disallows `Object` static methods added after ES1 (`Object.create`, `Object.assign`, `Object.keys`, `Object.freeze`, `Object.entries`, etc.) |
-| `1997/no-post-dom1-methods` | Disallows DOM methods not part of W3C DOM Level 1 (1998) (`querySelector`, `querySelectorAll`, `addEventListener`, `removeEventListener`, `dispatchEvent`, `append`, `prepend`, `remove`, `closest`, `matches`, `getBoundingClientRect`, `attachShadow`, `getElementsByClassName`, `importNode`, `createElementNS`, `hasAttribute`, `compareDocumentPosition`, `createRange`, etc.) |
+<!-- begin auto-generated rules list -->
+
+💼 Configurations enabled in.\
+✅ Set in the `recommended` configuration.
+
+| Name                                                               | Description                                                                   | 💼 |
+| :----------------------------------------------------------------- | :---------------------------------------------------------------------------- | :- |
+| [no-es2-features](docs/rules/no-es2-features.md)                   | Disallow JavaScript features introduced after ECMAScript 1 (1997)             | ✅  |
+| [no-modern-array-methods](docs/rules/no-modern-array-methods.md)   | Disallow Array methods introduced after ECMAScript 1 (1997)                   | ✅  |
+| [no-modern-globals](docs/rules/no-modern-globals.md)               | Disallow global objects and constructors introduced after ECMAScript 1 (1997) | ✅  |
+| [no-modern-object-methods](docs/rules/no-modern-object-methods.md) | Disallow Object static methods introduced after ECMAScript 1 (1997)           | ✅  |
+| [no-modern-string-methods](docs/rules/no-modern-string-methods.md) | Disallow String methods introduced after ECMAScript 1 (1997)                  | ✅  |
+| [no-post-dom1-methods](docs/rules/no-post-dom1-methods.md)         | Disallow DOM methods not part of W3C DOM Level 1 (1998)                       | ✅  |
+
+<!-- end auto-generated rules list -->
 
 ## Valid ES1 code examples
 
