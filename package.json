@@ -1,0 +1,47 @@
+{
+  "name": "eslint-plugin-1997",
+  "version": "1.0.0",
+  "description": "ESLint plugin enforcing ECMAScript 1 (1997) JavaScript standard",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "update:eslint-docs": "eslint-doc-generator",
+    "lint:eslint-docs": "eslint-doc-generator --check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkrl/eslint-plugin-1997"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "ecmascript",
+    "es1",
+    "1997",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "eslint-doc-generator": "^3.7.0",
+    "jest": "^29.0.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "lib/**/*.js",
+      "index.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ]
+  }
+}
